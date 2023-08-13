@@ -1,0 +1,48 @@
+NOSql  === Not Only SQL
+
+mongodb follows the CAP theorem 
+C == Consistency
+A == Availability
+P == Partition tolerance
+(C or A) and P will be available
+
+RDBMS = provides only consistency , not partition tolerance
+Couch DB , Cassendra = provides only partition tolerance  , not consistency 
+
+schemas means tables 
+
+DB types 
+RDBMS = SQl , Oracle
+Document DB = MongoDB JSON format
+Key value DB  == Redis, DynamoDB
+Wide column stores  (creates dynamic column) == Casaandra, HBase
+Graph DB == stores as nodes and edges = Neo4j, JanusGraph
+
+Pros of Doc DB
+1. Data model , No joins
+2. Flexible schema , any types of data
+3. JSON lightweight
+
+Why  Mongo DB:
+1.opensource 
+2.free cloud version
+can use in memory storage engine 
+100 % flexibility to select storage engine
+
+SQL terms     MongoDB terms
+DB            DB
+Table         Collection
+Row           JSON/BSON Document
+Column        Field
+Index         Index
+
+                   JSON                            BSON (Binary JSON)
+Encoding           UTF-8 string                    Binary
+Data Support       String , Boolean                String,Boolean,Number
+                   Array                           (Integer,Float,Long,Decimal128),
+                                                   Array,Date ,Raw Binary
+Readability        Human and Machine               Machine only       
+
+converts JSON to BSOn and stores in DB
+
+

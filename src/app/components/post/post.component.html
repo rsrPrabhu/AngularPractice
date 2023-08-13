@@ -1,0 +1,6 @@
+<div *ngIf="post" style="width: 100%;">
+    <a [routerLink]="['detail' , post.id]">{{post.title}}</a>
+    <!-- <div> {{post.title}}</div> -->
+    <!-- <div style="margin-left: 10px;" (click)="onDeletePost()">Delete</div> -->
+    <button style="margin-left: 10px;" (click)="onDeletePost()">Delete</button>
+</div>
