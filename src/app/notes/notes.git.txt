@@ -6,7 +6,8 @@ levels of configuration
  2.User Account(Global level)  (users/username/.gitconfig)
  3.System level (Git installation)  (user/local/etc/gitconfig)
 
-git config --list --show-origin
+git config --list --show-origin (details of git paths)
+git config --list --show-origin --global --list
 clear  == clear cmd lines
 cd..   == go back from folder
 
@@ -26,7 +27,7 @@ git config  --unset user.name (removes name)
 
     file data ex :: user.name is key value as mentioning
          [user]
-          	email = prabhass575@gmail.com
+          email = prabhass575@gmail.com
         	name = Prabhakaran
 
 git config --local --remove-section user  == removes whole section            
@@ -34,7 +35,7 @@ git help       == gives all comments provided by git commonly
 git help -a    == all set of git comments ==  -a indicates all 
 git help --all
 
-git help init == gives the detal about init command
+git help init == gives the detail about init command
 git status
 git add filname (git add index.html)  ==  file is staged
 git commit -m 'message'
@@ -67,8 +68,8 @@ cat .git/path gives the files inside folder
 use git-school.github for practice
 
 git branch -m new_branch  (rename the branch, so we should be inside that branch and add this command)
-git branch -d branchname (note :: come out from that del_branch and try this command )
-git branch -D branchname  (for changes made in insiade content)
+git branch -d branchname  (note :: come out from that del_branch and try this command )
+git branch -D branchname  (for changes made in inside content)
 
 git merge branchName
 git merge --abort  (stop merging)
@@ -101,7 +102,7 @@ as u can c br2cherrPickBR2commit from br2 branch would move to br1 branch, so br
 
 git cherry-pick 444444-hashcode
 
-git reset --used to move b 2 br1
+git reset --used to remove unwanted commit from a time 
 --hard == working and staging
 --mixed  default  =move files to staging
 --soft
@@ -241,3 +242,60 @@ git push -c origin branchname
 
 rm -rf branchname
 
+
+git fork :: is for without add as contributors
+
+git remote add upstream <GitURL>
+git pull upstream main  :: useful for connect with forked project's pull uptodate
+
+git tags  :: labelling for commits
+            use ful version updates
+
+  1.Lightweight tags
+  2.Annotated tags
+
+Semantic versioning
+
+   5.6.0    
+   5  major
+   6  minor
+   0  patch
+
+   Patch release :: majorly on bug fixes
+   Minor release :: new feature / functionality added
+   major release :: total change / major functionality changes
+
+git tag
+git tag v1.0.0        Lightweight
+git tag -a v1.0.0     Annotated
+git diff v1.0.0 v1.0.1
+
+git tag -l "*name*"   // contains
+git checkout tag
+git show tagname
+git show v1.0.0
+
+git push origin tagValue
+git push origin v1.0.0
+git push originname --tags     adds multiple tags
+
+git reflogs  :: Reference Logs
+
+git reflog show
+git reflog show main
+git reflog show main@{1.day.ago}
+git reflog show main@{one.day.ago}
+git reflog show main@{one.week.ago}
+
+git checkout show main@{one.day.ago}
+git diff main main@{one.day.ago}
+
+get the log id ,  and reset that
+
+
+:::::::::::::ALIAS::::::::::
+
+open the config file 
+
+[alias]
+   s = status
