@@ -1,0 +1,6 @@
+/Users/prabhakaran/Downloads/mongodb-macos-x86_64-5.0.21
+/Users/prabhakaran/Downloads/mongodb-macos-x86_64-5.0.21/data/db
+
+ls -ltrh
+
+/Users/prabhakaran/Downloads/mongodb-macos-x86_64-5.0.21/bin

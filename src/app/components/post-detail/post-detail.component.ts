@@ -10,7 +10,7 @@ import { PostsService } from 'src/app/services/Post/posts.service';
   styleUrls: ['./post-detail.component.css']
 })
 export class PostDetailComponent implements OnInit {
-  post?: Post;
+  post: Post | any;
   constructor(private route: ActivatedRoute, private postService: PostsService,
     private location: Location) { }
 
