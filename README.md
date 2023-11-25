@@ -49,7 +49,7 @@ _Below is an example of how you can instruct your audience on installing and set
  
 1. Clone the repo
    ```sh
-   https://github.com/rsrPrabhu/ngProject/tree/master
+   https://github.com/rsrPrabhu/ngProject.git
    ```
 2. Install NPM packages
    ```sh
